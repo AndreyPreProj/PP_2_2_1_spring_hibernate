@@ -40,6 +40,9 @@ public class MainApp {
         User user33 = userService.getUserByCar(1662, "Audi");
         System.out.println(user33);
 
+        User user4 = userService.getUserByCar(1305, "Ferrari");
+        System.out.println("Получаем юзера под идентификатором " + user4.getId());
+
 
         List<User> users = userService.listUsers();
         for (User user : users) {
